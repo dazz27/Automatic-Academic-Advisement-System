@@ -1,2 +1,4 @@
 # Automatic-Academic-Advisement-System
 This program allows for FSC students to automatically generate a course schedule based on their current academic status and interests.
+
+Abstract:  I would like to develop an algorithm to help students at Farmingdale State College determine a potential course track for their respective degree programs. Use of the algorithm would result in automatic advisement, thus planning out which courses they would need to take each semester throughout their four year degree, starting from any point in their degree. By using machine learning techniques, I can determine the most optimal track for students to take throughout their degree and also suggest electives for them to take based on their interests. This will hopefully result in the development of an application that allows for students more customization options when planning their college future.
