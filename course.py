@@ -1,5 +1,5 @@
 class Course:
- def __init__(self, course_ID, course_name, subject, credits, prerequisite, required_or_elective, category):
+ def __init__(self, course_ID, course_name, subject, credits, prerequisite, required_or_elective, category, general_or_core_course):
      self.course_ID = course_ID
      self.course_name = course_name
      self.subject = subject
@@ -7,6 +7,7 @@ class Course:
      self.prerequisite = prerequisite
      self.required_or_elective = required_or_elective
      self.category = category
+     self.general_or_core_course = general_or_core_course
 
 #Getters and Setters
 def get_course_ID(self):
@@ -51,7 +52,13 @@ def get_category(self):
 def set_category(self, category):
     self.category = category
 
-def print_data(self, course_ID, course_name, subject, credits, prerequisite, required_or_elective, category):
+def get_general_or_core_course(self):
+    return self.general_or_core_course
+ 
+def set_general_or_core_course(self, general_or_core_course)
+    self.general_or_core_course = general_or_core_course
+
+def print_data(self, course_ID, course_name, subject, credits, prerequisite, required_or_elective, category, general_or_core_course):
     print(f"Course ID: {course_ID}")
     print(f"Couse Name: {course_name}")
     print(f"Subject: {subject}")
@@ -59,5 +66,6 @@ def print_data(self, course_ID, course_name, subject, credits, prerequisite, req
     print(f"Prerequisite: {prerequisite}")
     print(f"Required or Eletive: {required_or_elective}")
     print(f"Category: {category}")
+    print(f"Category: {general_or_core_course}")
 
-std1 = Course(230, "Foundations of Computer Programming II", "BCS", 3, "BCS 120", "Required", "")
+std1 = Course(230, "Foundations of Computer Programming II", "BCS", 3, "BCS 120", "Required", "", "Core Course")
